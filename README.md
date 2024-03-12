@@ -1,4 +1,10 @@
 # rock-paper-scissors
+<h1>V1.2</h1>
+<ul>
+<li> Add JS file and initial computer choices
+</li>
+</ul>
+
 <h1>V1.1</h1>
 <ul>
 <li> Add html file
