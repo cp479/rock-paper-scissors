@@ -1,10 +1,4 @@
 # rock-paper-scissors
-<h1>V1.2.2</h1>
-<ul>
-<li> Add function for one round of the game
-</li>
-</ul>
-
 <h1>V1.2.1</h1>
 <ul>
 <li> Add getComputerSelection function
