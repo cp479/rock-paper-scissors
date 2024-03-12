@@ -36,7 +36,28 @@ function getComputerSelection() {
 
     let userScore = 0
     let computerScore = 0
-    
+
+    playgame(5);
+    declareWinner (userScore, computerScore)
+
+    function playGame(rounds) {
+        for (let i = 0; i < rounds; i++) {
+            playRound(getUserSelection(), getComputerSelection());
+            console.log(`Round ${i+1}: You ${userScore}  Computer: ${computerScore}`);
+        }
+    }
+
+    // Declare winner of game
+    function declareWinner(userScore, computerScore) {
+        if (userScore == computerScore) {
+            return alert("You tied! Good game!");
+        }
+        else if (userScore > computerScore) {
+            return alert("You won! Well done!");
+        }
+        else return alert("You lost. Play again!");
+    }
+
     function playRound(userSelection, computerSelection) {
         //Show user and computer selections in console
         console.log ("User: " + userSelection + "   Computer: " + computerSelection);
