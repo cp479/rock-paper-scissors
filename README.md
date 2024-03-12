@@ -1,4 +1,10 @@
 # rock-paper-scissors
+<h1>V1.5.1</h1>
+<ul>
+<li> Polish game
+</li>
+</ul>
+
 <h1>V1.5</h1>
 <ul>
 <li> Add game of 5 rounds
