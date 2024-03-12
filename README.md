@@ -1,4 +1,10 @@
 # rock-paper-scissors
+<h1>V1.4</h1>
+<ul>
+<li> Add round of single game
+</li>
+</ul>
+
 <h1>V1.3</h1>
 <ul>
 <li> Add userSelection function
