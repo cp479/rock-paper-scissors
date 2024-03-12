@@ -1,4 +1,10 @@
 # rock-paper-scissors
+<h1>V1.3</h1>
+<ul>
+<li> Add userSelection function
+</li>
+</ul>
+
 <h1>V1.2.1</h1>
 <ul>
 <li> Add getComputerSelection function
