@@ -1,4 +1,10 @@
 # rock-paper-scissors
+<h1>V1.5.2</h1>
+<ul>
+<li> Add comment on invalid prompt answer
+</li>
+</ul>
+
 <h1>V1.5.1</h1>
 <ul>
 <li> Polish game

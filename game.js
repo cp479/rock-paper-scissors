@@ -74,6 +74,7 @@ function getUserSelection() {
             userInput == "scissors") {
             return userInput;
         }
+        // This doesn't error properly - revisit another time
             else {
                 return "Please choose a valid answer";
         } ;
