@@ -3,16 +3,7 @@ let userScore = 0
 // Start variable to track computerScore at 0
 let computerScore = 0
 
-playGame(5);
-declareWinner(userScore, computerScore);
 
-//  function to playGame
-function playGame(rounds) {
-    for (let i = 0; i < rounds; i++) {
-        playRound(getUserSelection(), getComputerSelection());
-        console.log(`Round ${i+1}:   You: ${userScore}   Computer: ${computerScore}`);
-    }
-}
 
 // Declare the winner of the game
 function declareWinner(userScore, computerScore) {

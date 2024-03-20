@@ -1,6 +1,12 @@
 # rock-paper-scissors
 <h1>V2.0</h1>
 <ul>
+<li> Add elements for buttons
+</li>
+</ul>
+
+<h1>V2.0</h1>
+<ul>
 <li> Change web title and test branch changes
 </li>
 </ul>
