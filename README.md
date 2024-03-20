@@ -1,4 +1,10 @@
 # rock-paper-scissors
+<h1>V2.0</h1>
+<ul>
+<li> Change web title and test branch changes
+</li>
+</ul>
+
 <h1>V1.5.2</h1>
 <ul>
 <li> Add comment on invalid prompt answer
