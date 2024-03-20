@@ -1,4 +1,10 @@
 # rock-paper-scissors
+<h1>V2.1</h1>
+<ul>
+<li> Add elements for displaying score
+</li>
+</ul>
+
 <h1>V2.0</h1>
 <ul>
 <li> Add elements for buttons
