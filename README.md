@@ -1,4 +1,10 @@
 # rock-paper-scissors
+<h1>V2.3.2</h1>
+<ul>
+<li> Practice merging into main
+</li>
+</ul>
+
 <h1>V2.3.1</h1>
 <ul>
 <li> Test game and reset function (revisit)
