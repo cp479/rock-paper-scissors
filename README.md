@@ -1,4 +1,11 @@
 # rock-paper-scissors
+
+<h1>V2.3</h1>
+<ul>
+<li> Add JSS game and reset function
+</li>
+</ul>
+
 <h1>V2.2</h1>
 <ul>
 <li> Add JSS player and computer choice

@@ -1,4 +1,16 @@
+let playerChoice = document.querySelectorAll(".player-choice");
+let computerSelection;
+let playerScoreContainer = document.getElementById("playeScore");
+let computerScoreContainer = document.getElementById("computerScore");
+let computerChoiceContainer = document.getElementById("computerChoice");
+let messageContainer = document.querySelector(".message");
+let message = messageContainer.querySelector(".result");
 
+let playerScore = 0;
+let computerScore = 0;
+let maxScore = 5;
+
+let resetGame = document.getElementById("resetGame")
 
 playerChoice.forEach(function (choice) {
     choice.addEventListener("click", function () {
@@ -20,6 +32,44 @@ playerChoice.forEach(function (choice) {
     })
 });
 
+function playRound(playerSelection, computerSelection) {
+    if (playerSelection === computerSelection) {
+        message.innterText = "Tied! You both chose the same one";
+        message.classList.remove("victory", "defeat");
+    } 
+    else if (
+        playerSelection === "rock" && computerSelection === "scissors" ||
+        playerSelection === "paper" && computerSelection === "rock" ||
+        playerSelection === "scissors" && computerSelection === "paper"
+    ) {
+        message.innterText = "You win!"
+        message.classList.remove("defeat");
+        message.classList.add("victory");
+
+        playerScore++;
+        playerScoreContainer.innterText = playerScore;
+
+        if (playerScore === maxScore) {
+            message.innerText = "You won the game!"
+            gameOver()
+        }
+    } 
+    else {
+        message.innerText = "You lost!"
+        message.classList.remove("victory");
+        message.classList.add("defeat");
+
+        computerScore++;
+        computerScoreContainer.innerText = computerScore;
+
+        if (computerScore === maxScore) {
+            message.innerText = "Computer wins the game!"
+            gameOver()
+        }
+    }
+    return message.innerText;
+}
+
 // Create function getComputerChoice refactored
 function getComputerChoice() {
     // Create a variable randomNumber between 0 - 2
@@ -40,7 +90,31 @@ function getComputerChoice() {
     return computerChoiceContainer.innerText = computerChoice;
 }
 
+function gameOver() {
+    playerChoice.forEach(function (choice) {
+        choice.setAttribute("disabled", true);
+        choice.classList.remove("selected");
 
+    }
+    );
+    resetGame.style.display = "block";
+}
+
+function reset() {
+    playerScore = 0;
+    computerScore = 0;
+    playerScoreContainer.innerText = playerScore;
+    computerScoreContainer.innterText = computerScore;
+
+    playerChoice.forEach(function (choice) {
+        choice.removeAttribute("disabled");
+    }
+    );
+    resetGame.style.display = "none";
+    messageContainer.classList.add("hidden");
+}
+
+resetGame.addEventListener("click", reset);
 
 // Refactoring initial code, commented below
 
