@@ -1,4 +1,10 @@
 # rock-paper-scissors
+<h1>V2.2</h1>
+<ul>
+<li> Add JSS player and computer choice
+</li>
+</ul>
+
 <h1>V2.1</h1>
 <ul>
 <li> Add elements for displaying score
