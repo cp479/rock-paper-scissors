@@ -1,4 +1,11 @@
 # rock-paper-scissors
+<h1>V2.3.1</h1>
+<ul>
+<li> Test game and reset function (revisit)
+</li>
+<li> Note to self add CSS for UI once JSS is done
+</li>
+</ul>
 
 <h1>V2.3</h1>
 <ul>

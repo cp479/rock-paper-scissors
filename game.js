@@ -116,6 +116,7 @@ function reset() {
 
 resetGame.addEventListener("click", reset);
 
+
 // Refactoring initial code, commented below
 
 
